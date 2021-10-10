@@ -5,7 +5,7 @@
 a = int(input())
 b = int(input())
 n = 1
-while  a < b:
+while a < b:
     n += 1
     a = a + (a / 10)
 print(n)

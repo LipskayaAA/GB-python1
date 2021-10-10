@@ -6,19 +6,4 @@ time = int(input("Please, record the time per seconds: "))
 hour = time // 3600
 minute = (time - (hour*3600)) // 60
 secon = time - (minute*60) - (hour*3600)
-if (hour < 10) and (minute < 10) and (secon < 10):
-    print(f"{0}{hour}:{0}{minute}:{0}{secon}")
-elif (hour < 10) and (minute < 10):
-    print(f"{0}{hour}:{0}{minute}:{secon}")
-elif (hour < 10) and (secon < 10):
-    print(f"{0}{hour}:{minute}:{0}{secon}")
-elif (minute < 10) and (secon < 10):
-    print(f"{hour}:{0}{minute}:{0}{secon}")
-elif (hour < 10):
-    print(f"{0}{hour}:{minute}:{secon}")
-elif (minute < 10):
-    print(f"{hour}:{0}{minute}:{secon}")
-elif (secon < 10):
-    print(f"{hour}:{minute}:{0}{secon}")
-else:
-    print(f"{hour}:{minute}:{secon}")
+print(f"{hour:02}:{minute:04}:{secon:02}")
